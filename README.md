@@ -1,12 +1,12 @@
 # XatusTech Armor System - Real-World MegaMan-Inspired Suit
 
-## Overview
+## 🧾 Overview
 This repository contains the advanced modular system for a real-life smart armor suit inspired by the MegaMan universe and Orgarm-style artificial muscle support. It integrates motion control, AI vision, glove-based gesture input, neural-like response, and central AI logic.
 
 ---
 
 ## 📁 Folder Structure
-```
+```bash
 xatustech_armor_system/
 ├── core/
 │   ├── ai_central_controller.py
@@ -39,7 +39,8 @@ xatustech_armor_system/
 
 ---
 
-## 🧠 modules/motion_control/arm_servo_control.ino
+## 🧠 Motion Control (Arduino & Python)
+### **Arduino Code** - `arm_servo_control.ino`
 ```cpp
 #include <Servo.h>
 Servo armServo;
@@ -57,7 +58,7 @@ void loop() {
 }
 ```
 
-## 🧠 modules/motion_control/move_arm.py
+### **Python Code** - `move_arm.py`
 ```python
 import serial
 import time
@@ -73,7 +74,7 @@ move_arm(90)
 
 ---
 
-## 👁 modules/ai_vision/face_detection.py
+## 👁 AI Vision Detection - `face_detection.py`
 ```python
 import cv2
 
@@ -98,7 +99,7 @@ cv2.destroyAllWindows()
 
 ---
 
-## 🧤 modules/glove_input/flex_sensor.ino
+## 🧤 Glove Input with Flex Sensor - `flex_sensor.ino`
 ```cpp
 int flexSensor = A0;
 
@@ -115,7 +116,7 @@ void loop() {
 
 ---
 
-## 🗣 modules/voice_control/voice_command.py
+## 🗣 Voice Command Module - `voice_command.py`
 ```python
 import speech_recognition as sr
 
@@ -136,7 +137,7 @@ except:
 
 ---
 
-## 💪 modules/artificial_muscles/emg_sensor_control.ino
+## 💪 Artificial Muscle Support - `emg_sensor_control.ino`
 ```cpp
 int emgSensor = A0;
 
@@ -160,7 +161,7 @@ void loop() {
 
 ---
 
-## 🔫 modules/arm_buster/buster_activation.py
+## 🔫 Arm Buster Mode - `buster_activation.py`
 ```python
 def activate_buster():
     print("Buster Mode Engaged ⚡️")
@@ -169,24 +170,23 @@ def activate_buster():
 
 ---
 
-## 📌 Future Add-ons
-- Neural interface (EEG)
-- HUD system using AR glasses or visor
-- Pressure sensors in boots
-- Back-mounted power core with OLED diagnostics
+## 🔧 Future Expansion
+- 🧠 EEG Neural Link interface (Neuralink-inspired)
+- 🧢 Augmented Reality HUD for helmet
+- 👟 Pressure-based boot stabilizers
+- 🔋 Back-mounted power core with cooling system
 
 ---
 
 ## ✅ Requirements
 - Arduino IDE
 - Python 3.7+
-- OpenCV
-- PySerial
-- SpeechRecognition + PyAudio
-- EMG and flex sensors
+- OpenCV (`pip install opencv-python`)
+- PySerial (`pip install pyserial`)
+- SpeechRecognition (`pip install SpeechRecognition`) + PyAudio
+- EMG sensor hardware + Flex sensor for input
 
 ---
 
-## License
-Open-source for futuristic devs, creators, and cybernetic engineers.
-Modify and enhance freely!
+## 📜 License
+**Open-source** for educational, sci-fi, cybernetic tech devs. Build, hack, enhance, and make your own legacy like Xatus.EXE!
