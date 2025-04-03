@@ -1,6 +1,8 @@
 # XatusTech Armor System - Real-World MegaMan-Inspired Suit
 
 ## 🧾 Overview
+**XatusTech Armor** is a modular smart armor system designed for both humans and humanoid robots. Its purpose is to enhance law enforcement capabilities while protecting against physical threats and environmental hazards, including airborne diseases. The suit is adaptable across genders, builds, and tactical roles.
+
 This repository contains the advanced modular system for a real-life smart armor suit inspired by the MegaMan universe and Orgarm-style artificial muscle support. It integrates motion control, AI vision, glove-based gesture input, neural-like response, and central AI logic.
 
 ---
@@ -39,8 +41,23 @@ xatustech_armor_system/
 
 ---
 
+## 📏 Suit Specifications
+| Component             | Description                                                                 | Material                | Size Range       | Functionality Notes                             |
+|----------------------|-----------------------------------------------------------------------------|-------------------------|------------------|--------------------------------------------------|
+| Exoskeletal Frame    | Full-body aluminum-titanium support structure                               | Carbon-Ti Composite     | S, M, L, XL       | Enhances strength, absorbs impacts               |
+| Chest Core Unit      | Central control + power module (glows blue)                                 | Reinforced polymer      | Adjustable chest plate | Controls energy distribution + diagnostics  |
+| Arm Cannon           | Integrated buster capable of deploying tools, tasers, or non-lethal rounds  | Composite alloy         | 12–16" forearm    | Modular weapon or tool interface                |
+| Gloves (Smart Flex)  | Flex sensor-enabled with vibration feedback                                 | Carbon fiber mesh       | Standard glove fit | Gesture-based input system                     |
+| Helmet with HUD      | Smart helmet with camera, AI overlay, and breathing filter                  | Impact polymer + AR     | One size (adjustable) | HUD, air filtration, mic/speaker              |
+| Back Power Core      | Battery module + fan-cooled energy hub                                      | Alloy + graphene cell   | Fits spine slot    | Swappable, with battery level display           |
+| Boots                | Reinforced with pressure sensors for stability                              | Heavy-duty polymer      | US 6–13            | Shock absorption, balance control               |
+| Cooling System       | Peltier-based torso layer                                                   | Cooling gel fabric      | Body-fit layer     | Regulates internal suit temperature             |
+| Disease Filter Nodes | Integrated air filter vents (shoulder, helmet)                              | Nano-filtration mesh    | Embedded in frame  | Reduces exposure to airborne pathogens          |
+
+---
+
 ## 🧠 Motion Control (Arduino & Python)
-### **Arduino Code** - `arm_servo_control.ino`
+### Arduino Code - `arm_servo_control.ino`
 ```cpp
 #include <Servo.h>
 Servo armServo;
@@ -58,7 +75,7 @@ void loop() {
 }
 ```
 
-### **Python Code** - `move_arm.py`
+### Python Code - `move_arm.py`
 ```python
 import serial
 import time
@@ -184,7 +201,7 @@ def activate_buster():
 - OpenCV (`pip install opencv-python`)
 - PySerial (`pip install pyserial`)
 - SpeechRecognition (`pip install SpeechRecognition`) + PyAudio
-- EMG sensor hardware + Flex sensor for input
+- EMG sensor hardware + Flex sensor
 
 ---
 
